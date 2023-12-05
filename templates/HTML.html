@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diamond Project</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1 style="text-align: center;
+  background-color: darkgray;
+  color: white;
+  margin-top: -3px;">Diamond Project</h1>
+  <div style="text-align: center;">
+    <h1>Mines Map</h1>
+  </div>
+  <div style="border: 1px solid #ccc; padding: 10px;">
+    <!-- Add the input field for filtering -->
+    <input type="text" id="country-input" placeholder="Filter by country" style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;">
+    <!-- Create the map plot -->
+    <div id="map-plot"></div>
+  </div>
+  
+
+
+  <div style="text-align: center;">
+    <h1>Natural Diamonds</h1>
+  </div>
+  
+  <div style="display: flex; justify-content: space-between;">
+    <div style="width: 48%; padding: 10px;">
+      <div id="bar-chart-natural"></div>
+    </div>
+    <div style="width: 48%; padding: 10px;">
+      <div id="pie-chart-natural"></div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <!-- Add a container for the first scatter plot -->
+   
+    <div id="scatterClarityMined"></div>
+
+    <!-- Add a container for the bar chart -->
+    <div id="scatterCutMined"></div>
+
+    <!-- Add a container for the pie chart -->
+    <div id="scatterColorMined"></div>
+  </div>
+   <!-- Add a container for the pie chart -->
+   
+   <div style="text-align: center;">
+    <h1>LAB-GROWN Diamonds</h1>
+  </div>
+    <div style="display: flex; justify-content: space-between;">
+      <div style="width: 48%; padding: 10px;">
+        <div id="bar-chart-lab"></div>
+      </div>
+      <div style="width: 48%; padding: 10px;">
+        <div id="pie-chart-lab"></div>
+      </div>
+      </div>
+
+    
+      
+    <div class="container">
+      <!-- Add a container for the first scatter plot -->
+     
+      <div id="scatterClarityLab"></div>
+  
+      <!-- Add a container for the bar chart -->
+      <div id="scatterCutLab"></div>
+  
+      <!-- Add a container for the pie chart -->
+      <div id="scatterColorLab"></div>
+    </div>
+   
+  <script src="{{ url_for('static', filename='Visuals.js') }}"></script>
+</body>
+</html>
