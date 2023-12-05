@@ -8,7 +8,7 @@ Install required libraries and run code file
 ```pip install -r requirements.txt```
 
 
-```python3 Flask_Database.py```
+```python3 flask_deployment.py```
 
 
 ![Screenshot](image/image.png)
