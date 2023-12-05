@@ -9,3 +9,6 @@ Install required libraries and run code file
 
 
 ```python3 Flask_Database.py```
+
+
+![Screenshot](image.png)
